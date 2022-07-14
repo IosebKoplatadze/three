@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import './index.scss';
 import earthMap from './assets/earth.jpeg';
 import moonMap from './assets/moon.jpeg';
@@ -35,6 +36,9 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 camera.position.z = 20;
+
+const controls = new OrbitControls(camera, renderer.domElement);
+
 renderer.setAnimationLoop(animate);
 
 function animate() {
