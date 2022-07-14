@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "predeploy": "parcel build --public-url /geo-decision/",
+    "predeploy": "parcel build --public-url /three/",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
